@@ -54,11 +54,15 @@ jobs:
         run: |
           REPO="${{ inputs.repo_name }}"
           cd "${REPO}"
+
           git init
           git config user.name "platform-bot"
           git config user.email "platform-bot@users.noreply.github.com"
+
           git add .
           git commit -m "chore: bootstrap ${REPO}"
+
           git branch -M main
-          git remote add origin "https://github.com/platform-engi/${REPO}.git"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/platform-engi/${REPO}.git"
           git push -u origin main
+
