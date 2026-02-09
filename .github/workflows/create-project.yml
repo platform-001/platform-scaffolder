@@ -82,7 +82,8 @@ jobs:
           RUN_URL: https://github.com/platform-001/${{ inputs.repo_name }}/actions
         run: |
           cd "${REPO}"
-    
+          pwd
+          ls
           # Escribimos el script dinámicamente a un archivo temporal
           cat << 'EOF' > report.py
           import json, pathlib, os, requests
