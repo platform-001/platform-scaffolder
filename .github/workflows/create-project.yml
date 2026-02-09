@@ -82,4 +82,6 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE
           pwd
-          python3 ./scripts/report_to_port.py
+          ls
+          cd ..
+          python3 scripts/report_to_port.py
