@@ -83,7 +83,7 @@ jobs:
         run: |
           cd "${REPO}"
           pwd
-          ls
+          ls -R api/
           # Escribimos el script dinámicamente a un archivo temporal
           cat << 'EOF' > report.py
           import json, pathlib, os, requests
