@@ -116,7 +116,7 @@ jobs:
                   "codigo_branch": f"{service}:{repo}:{branch}",
                   "nombre_repositorio": repo,
                   "branch": branch,
-                  "build_status": "Con errores",
+                  "build_status": "Nuevo",
                   "cobertura": 0,
                   "vulnerabilidades_altas": 0,
                   "secretos_encontrados": 0,
